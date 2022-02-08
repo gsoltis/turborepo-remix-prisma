@@ -2,7 +2,7 @@ import { prisma } from 'clients'
 
 class DbSource {
   getUser(id: string) {
-    return prisma.user.findFirst({
+    return prisma().user.findFirst({
       where: {
         id: {
           equals: id,
