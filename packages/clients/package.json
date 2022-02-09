@@ -5,7 +5,7 @@
   "typings": "build/index.d.ts",
   "scripts": {
     "generate": "prisma generate",
-    "build": "yarn generate && tsc --build"
+    "build": "yarn generate && tsc --build && cp prisma/schema.prisma build/"
   },
   "dependencies": {
     "@prisma/client": "^3.9.1"
